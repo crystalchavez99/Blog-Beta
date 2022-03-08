@@ -5,7 +5,7 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Blog
+        title Crystal Chavez Blog
     body
         div.container
             h1.mb-4 Blog Articles
@@ -19,5 +19,5 @@ html(lang="en")
                         div.card-text.mb-2
                             p= article.description
                         a(href=`articles/${article.id}`).btn.btn-primary READ MORE
-                        form(action=`/articles/${articles.id}?_method=DELETE` method="POST").d-inline
+                        form(action=`/articles/${article.id}?_method=DELETE` method="POST").d-inline
                             button(type="submit").btn.btn-danger Delete
