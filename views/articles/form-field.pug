@@ -1,0 +1,11 @@
+div.form-group.mb-4
+    label(for="title") Title
+    input(required type="text" name="title" id="title" value = article.title).form-control
+div.form-group.mb-4
+    label(for="description") Description
+    textarea(required name="description" id="description").form-control= article.description
+div.form-group.mb-4
+    label(for="markdown") Markdown
+    textarea(name="markdown" id="markdown" required).form-control= article.markdown
+a(href="/").btn.btn-secondary Cancel
+button(type="submit").btn.btn-primary Save
