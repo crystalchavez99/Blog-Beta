@@ -8,5 +8,5 @@ html(lang="en")
     body
         div.container
             h1.mb-4 Edit Article
-            form(action=`/articles/${article.id}?_method=PUT`, method="post")
+            form(action=`/articles/${article.id}?_method=PUT`, method="POST")
                 include form-field.pug

@@ -19,5 +19,6 @@ html(lang="en")
                         div.card-text.mb-2
                             p= article.description
                         a(href=`articles/${article.id}`).btn.btn-primary READ MORE
+                        a(href=`articles/edit/${article.id}`).btn.btn-info Edit
                         form(action=`/articles/${article.id}?_method=DELETE` method="POST").d-inline
                             button(type="submit").btn.btn-danger Delete
